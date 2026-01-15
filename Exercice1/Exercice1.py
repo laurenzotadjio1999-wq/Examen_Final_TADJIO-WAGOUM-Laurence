@@ -16,3 +16,4 @@ class Affichage:
         T=Triangle(n)
         for i in range(0, n):
             print(T.lignes(i))
+Affichage().executer()
