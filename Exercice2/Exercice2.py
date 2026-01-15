@@ -13,12 +13,16 @@ def Double():
         input1.setText("")
     finally:
         lbl_valider.setText("  " + str(resultat))
+#fonction sauvegarder
+def Sauvegarder():
+    pass
 
-
-
-
-
-
+#fonction charger
+def Charger():
+    f = open("resultats.txt", "r")
+    contenu = f.read()
+    f.close()
+    input2.setText(contenu.strip())
 
 #Création de l'application et de la fenêtre
 app = QApplication([])
@@ -62,7 +66,7 @@ grid.addWidget(btn_save, 4, 0)
 btn3_charger = QPushButton(fen)
 btn3_charger.setText("Charger résultat")
 grid.addWidget(btn3_charger, 4, 4)
-#btn3_chargwr.clicked.connect()
+btn3_charger.clicked.connect()
 
 # affiche la fenetre + execute l'application ... :)
 fen.show()
