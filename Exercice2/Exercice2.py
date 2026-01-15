@@ -1,5 +1,25 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QGridLayout, QLineEdit, QLabel, QPushButton
 
+#la fonction qui recupère la valeur saisie et calcule le double.
+def Double():
+    global resultat
+    try:
+        a = int(input1.text())
+        resultat = a*2
+    #Validation des donnees.
+    except Exception as e:
+        print("Exception recuperee : " + e.__str__())
+        resultat = "erreur"
+        input1.setText("")
+    finally:
+        lbl_valider.setText("  " + str(resultat))
+
+
+
+
+
+
+
 #Création de l'application et de la fenêtre
 app = QApplication([])
 fen = QWidget()
@@ -29,7 +49,7 @@ grid.addWidget(lbl_valider, 1, 1)
 
 # btn_Valider l'opération
 btn_calculer = QPushButton("Valider l'opération")
-btn_calculer.clicked.connect()
+btn_calculer.clicked.connect(Double)
 grid.addWidget(btn_calculer, 3, 1)
 
 
