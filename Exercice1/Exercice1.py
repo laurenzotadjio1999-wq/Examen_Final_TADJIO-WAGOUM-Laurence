@@ -9,3 +9,6 @@ class Triangle:
         espace = " " * (self.n - i)
         return espace + ligne + " " + ligne
 
+#Création de la classe Affichage
+class Affichage:
+    pass
