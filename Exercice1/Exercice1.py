@@ -11,4 +11,8 @@ class Triangle:
 
 #Création de la classe Affichage
 class Affichage:
-    pass
+    def executer(self):
+        n = int(input("saisir le nombre de lignes : "))
+        T=Triangle(n)
+        for i in range(0, n):
+            print(T.lignes(i))
