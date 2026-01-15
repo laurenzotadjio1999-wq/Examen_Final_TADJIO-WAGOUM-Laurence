@@ -43,3 +43,7 @@ btn3_calcul = QPushButton(fen)
 btn3_calcul.setText("Charger résultat")
 grid.addWidget(btn3_calcul, 4, 4)
 #btn3_calcul.clicked.connect()
+
+# affiche la fenetre + execute l'application ... :)
+fen.show()
+app.exec()
