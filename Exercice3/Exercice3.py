@@ -23,3 +23,14 @@ class Outils:
             if x > grand:
                 grand = x
         return grand
+
+ # Fonction pour calculer la somme
+    def somme(self):
+        total = 0
+        for x in self.liste:
+            total = total + x
+        return total
+
+# Fonction pour calculer la moyenne
+    def moyenne(self):
+        return self.somme() / 10
